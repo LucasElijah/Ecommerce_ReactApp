@@ -24,17 +24,27 @@ const Navbar = () => {
 					</div>
 					<div className="item">
 						<Link className="link" to="/products/1">
-							Women
+							Over-Ear
 						</Link>
 					</div>
 					<div className="item">
 						<Link className="link" to="/products/2">
-							Men
+							In-Ear
 						</Link>
 					</div>
 					<div className="item">
 						<Link className="link" to="/products/3">
-							Kids
+							Audiophile
+						</Link>
+					</div>
+					<div className="item">
+						<Link className="link" to="/products/4">
+							Gaming
+						</Link>
+					</div>
+					<div className="item">
+						<Link className="link" to="/products/5">
+							Wireless
 						</Link>
 					</div>
 				</div>
