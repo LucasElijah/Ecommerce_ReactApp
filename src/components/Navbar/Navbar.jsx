@@ -23,34 +23,29 @@ const Navbar = () => {
 						<KeyboardArrowDown />
 					</div>
 					<div className="item">
-						<Link className="link" to="/products/1">
-							Over-Ear
+						<Link className="link" to="/">
+							Homepage
 						</Link>
 					</div>
 					<div className="item">
-						<Link className="link" to="/products/2">
-							In-Ear
+						<Link className="link" to="/">
+							About
 						</Link>
 					</div>
 					<div className="item">
-						<Link className="link" to="/products/3">
-							Audiophile
+						<Link className="link" to="/">
+							Contact
 						</Link>
 					</div>
 					<div className="item">
-						<Link className="link" to="/products/4">
-							Gaming
-						</Link>
-					</div>
-					<div className="item">
-						<Link className="link" to="/products/5">
-							Wireless
+						<Link className="link" to="/">
+							Stores
 						</Link>
 					</div>
 				</div>
 				<div className="center">
 					<Link className="link" to="/">
-						TITLE TEXT LINK HERE
+						AudioWorld
 					</Link>
 				</div>
 				<div className="right">
