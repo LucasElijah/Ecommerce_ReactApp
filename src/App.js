@@ -10,8 +10,6 @@ import Footer from "./components/Footer/Footer";
 import Home from "./pages/Home/Home";
 import Product from "./pages/Product/Product";
 import Products from "./pages/Products/Products";
-import path from "node:path/win32";
-import { element } from "prop-types";
 
 const Layout = () => {
   return (
@@ -37,8 +35,8 @@ const router = createBrowserRouter([
         element: <Products />
       },
       {
-        path: "/Products/:id",
-        element: <Products />
+        path: "/Product/:id",
+        element: <Product />
       },
     ]
   },
