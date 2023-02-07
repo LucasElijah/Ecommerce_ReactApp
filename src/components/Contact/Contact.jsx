@@ -1,5 +1,6 @@
 import { Facebook, Google, Instagram, Pinterest, Twitter } from '@mui/icons-material'
 import React from 'react'
+import "./Contact.scss"
 
 const Contact = () => {
   return (
