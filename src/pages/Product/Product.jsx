@@ -1,3 +1,4 @@
+import { AddShoppingCart, Balance, FavoriteBorder } from "@mui/icons-material";
 import React, { useState } from "react";
 import "./Product.scss";
 
@@ -25,7 +26,7 @@ const Product = () => {
 
 			<div className="right">
 				<h1>Title</h1>
-				<span>$69</span>
+				<span className="price">$69</span>
 				<p>
 					Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate
 					obcaecati ratione sit. Iste, exercitationem. Officia culpa eos
@@ -36,6 +37,29 @@ const Product = () => {
 					<button onClick={() => setQuantity((prev) => prev === 1 ? 1 : prev - 1 )}>-</button>
 					{quantity}
 					<button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
+				</div>
+				<button className="add">
+					<AddShoppingCart /> add to cart
+				</button>
+				<div className="links">
+					<div className="item">
+						<FavoriteBorder /> wishlist
+					</div>
+					<div className="item"> compare
+						<Balance />
+					</div>
+				</div>
+				<div className="info">
+					<span>Vendor: _____</span>
+					<span>Product Type: _____</span>
+					<span>Tag: _____</span>
+				</div>
+				<div className="details">
+					<span>DESCRIPTION</span>
+					<hr />
+					<span>ADDITIONAL INFO</span>
+					<hr />
+					<span>FAQ</span>
 				</div>
 			</div>
 		</div>
