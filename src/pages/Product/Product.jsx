@@ -3,7 +3,7 @@ import "./Product.scss";
 
 const Product = () => {
 	const [selectedImg, setSelectedImg] = useState(0);
-	const [quantity, setQuantity] = uQeState(0);
+	const [quantity, setQuantity] = useState(1);
 
 	const images = [
 		"https://images.pexels.com/photos/10026491/pexels-photo-10026491.png?auto=compress&cs=tinysrgb&w=1600&lazy=load",
@@ -33,9 +33,9 @@ const Product = () => {
 					Provident suscipit eum minima iste veniam.
 				</p>
 				<div className="quantity">
-					<button onClick={() => setQuantity((prev) => prev - 1)}>+</button>
+					<button onClick={() => setQuantity((prev) => prev === 1 ? 1 : prev - 1 )}>-</button>
 					{quantity}
-					<button onClick={() => setQuantity((prev) => prev + 1)}>-</button>
+					<button onClick={() => setQuantity((prev) => prev + 1)}>+</button>
 				</div>
 			</div>
 		</div>
