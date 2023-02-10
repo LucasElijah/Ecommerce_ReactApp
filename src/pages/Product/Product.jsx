@@ -54,7 +54,8 @@ const Product = () => {
 					<span>Product Type: _____</span>
 					<span>Tag: _____</span>
 				</div>
-				<div className="details">
+				<hr />
+				<div className="info">
 					<span>DESCRIPTION</span>
 					<hr />
 					<span>ADDITIONAL INFO</span>

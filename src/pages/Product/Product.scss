@@ -22,6 +22,7 @@
 
 		.mainImg {
 			flex: 5;
+      padding-right: 25px;
 
 			img {
 				width: 100%;
@@ -51,7 +52,7 @@
 		.quantity {
 			display: flex;
 			align-items: center;
-			grid-template: 10px;
+			gap: 10px;
 
 			button {
 				width: 50px;
@@ -65,7 +66,7 @@
 		}
 
     .add {
-      width: 25px;
+      width: 250px;
       padding: 10px;
       background-color: #38a5ff;
       color: white;
@@ -91,5 +92,23 @@
       }
     }
     
+
+    .info {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      color: grey;
+      font-size: 14px;
+      margin-top: 30px;
+
+      hr {
+        width: 200px;
+        border: 1px solid rgb(238, 237, 237);
+      }
+    }
+
+    hr {
+      border: 1px solid rgb(238, 237, 237);
+    }
 	}
 }
