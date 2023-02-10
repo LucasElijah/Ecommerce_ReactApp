@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
 	FavoriteBorderOutlined,
 	KeyboardArrowDown,
@@ -8,8 +8,12 @@ import {
 } from "@mui/icons-material";
 import { Link } from "react-router-dom";
 import "./Navbar.scss";
+import Cart from "../Cart/Cart";
 
 const Navbar = () => {
+
+	const [open, setOpen] = useState(false)
+
 	return (
 		<div className="navbar">
 			<div className="wrapper">
@@ -72,13 +76,14 @@ const Navbar = () => {
 					<div className="icons">
 						<PersonOutlineOutlined />
 						<FavoriteBorderOutlined />
-						<div className="cartIcon">
+						<div className="cartIcon" onClick={() => setOpen(!open)} >
 							<ShoppingCartOutlined />
 							<span>0</span>
 						</div>
 					</div>
 				</div>
 			</div>
+			{open && <Cart />}
 		</div>
 	);
 };
