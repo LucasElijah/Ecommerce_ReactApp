@@ -1,5 +1,6 @@
 import { DeleteOutlined } from "@mui/icons-material";
 import React from "react";
+import "./Cart.scss"
 
 const Cart = () => {
 	const data = [
