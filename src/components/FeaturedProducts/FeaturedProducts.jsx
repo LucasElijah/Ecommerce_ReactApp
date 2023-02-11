@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import "./FeaturedProducts.scss"
 import Card from '../Card/Card'
 
@@ -37,7 +37,9 @@ const FeaturedProducts = ({type}) => {
       oldPrice: 19,
       price: 10,
     },
-  ]
+  ];
+
+  const [products, setProducts] = useState([]);
 
   return (
     <div className='FeaturedProducts'>
