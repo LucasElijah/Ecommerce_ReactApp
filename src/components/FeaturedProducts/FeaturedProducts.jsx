@@ -25,10 +25,12 @@ const FeaturedProducts = ({ type }) => {
 					? "something went wrong here buddy..."
 					: loading
 					? "loading"
-					: data.map((item) => <Card item={item} key={item.id} />)}
+					: data?.map((item) => <Card item={item} key={item.id} />)}
 			</div>
 		</div>
 	);
 };
 
 export default FeaturedProducts;
+
+
