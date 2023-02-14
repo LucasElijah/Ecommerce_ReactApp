@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { makeRequest } from "../makeRequest";
 
 const useFetch = async (url) => {
 
@@ -9,8 +10,8 @@ const useFetch = async (url) => {
   useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const res = await axios.get(
-					process.env.REACT_APP_API_URL + `/products?populate=*&[filters][type][$eq]=${type}`,
+        setLoading(true)
+				const res = await makeRequest.get(url,
 					{
 						headers: {
 							Authorization: "bearer " + process.env.REACT_APP_API_TOKEN,
@@ -19,9 +20,10 @@ const useFetch = async (url) => {
 				);
         setData(res.data.data)
 			} catch (err) {
-				console.log(err);
+				setError(true)
 			}
+      setLoading(false)
 		};
 		fetchData();
-	}, []);
+	}, [url]);
 }
