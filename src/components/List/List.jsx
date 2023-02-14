@@ -1,6 +1,6 @@
 import React from "react";
 import "./List.scss";
-import Card from "../Card/Card"
+import Card from "../Card/Card";
 
 const List = () => {
 	const data = [
@@ -36,16 +36,18 @@ const List = () => {
 			price: 10,
 		},
 	];
-  
-	return(
-    <div className="list">
-      {data?.map(item=>(
-      <Card item={item} key={item.id} />
-    ))}
 
-    </div>
-  )
-    
+	return (
+		<div className="list">
+			
+
+
+
+			{/*  {data?.map(item=>(
+      <Card item={item} key={item.id} />
+    ))} */}
+		</div>
+	);
 };
 
 export default List;
