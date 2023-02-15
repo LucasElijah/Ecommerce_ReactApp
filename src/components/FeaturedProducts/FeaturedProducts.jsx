@@ -1,6 +1,6 @@
 import React from "react";
-import "./FeaturedProducts.scss";
 import Card from "../Card/Card";
+import "./FeaturedProducts.scss";
 import useFetch from "../../hooks/useFetch";
 
 const FeaturedProducts = ({ type }) => {
@@ -9,20 +9,20 @@ const FeaturedProducts = ({ type }) => {
 	);
 
 	return (
-		<div className="FeaturedProducts">
+		<div className="featuredProducts">
 			<div className="top">
-				<h1>{type} product</h1>
+				<h1>{type} products</h1>
 				<p>
-					lorem ipsum dolor sit amet, consecttuyur adsopiscing elit, sed do
-					eiusmod tempor incidid ut labre ret dlored mange aliqua. Quis ipsum
-					sespendisse il labore Risus. Coomod viverra maecsena accumsan lacus
-					fel facilisis labre et dolore magna aliqua quis. Ipsum ultrices
-					gravida. Risus commodo viverra maecenas.
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+					eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum
+					suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan
+					lacus vel facilisis labore et dolore magna aliqua. Quis ipsum
+					suspendisse ultrices gravida. Risus commodo viverra maecenas.
 				</p>
 			</div>
 			<div className="bottom">
 				{error
-					? "something went wrong here buddy..."
+					? "Something went wrong!"
 					: loading
 					? "loading"
 					: data?.map((item) => <Card item={item} key={item.id} />)}
@@ -32,5 +32,3 @@ const FeaturedProducts = ({ type }) => {
 };
 
 export default FeaturedProducts;
-
-
