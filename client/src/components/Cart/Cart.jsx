@@ -6,13 +6,13 @@ import "./Cart.scss";
 const Cart = () => {
 	const products = useSelector((state) => state.cart.products);
 
-	const totalPrice = () => {
+	/* const totalPrice = () => {
 		let total = 0;
 		products.forEach((item) => {
 			total += item.quantity * item.price;
 		});
 		return total.toFixed(2);
-	};
+	}; */
 
 	return (
 		<div className="cart">
@@ -30,7 +30,7 @@ const Cart = () => {
 			))}
 			<div className="total">
         <span>SUBTOTAL</span>
-        <span>${totalPrice()}</span>
+        <span>${/* {totalPrice()} */}45454</span>
       </div>
 			<button>Proceed to Checkout</button>
 			<span className="reset">Empty Cart</span>
