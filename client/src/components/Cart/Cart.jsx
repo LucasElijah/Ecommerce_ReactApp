@@ -1,7 +1,7 @@
 import { DeleteOutlined } from "@mui/icons-material";
 import React from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { removeItem } from "../../redux/cartReducer";
+import { removeItem, resetCart } from "../../redux/cartReducer";
 import "./Cart.scss";
 
 const Cart = () => {
@@ -35,7 +35,7 @@ const Cart = () => {
         <span>${totalPrice()}</span>
       </div>
 			<button>Proceed to Checkout</button>
-			<span className="reset">Empty Cart</span>
+			<span className="reset" onClick={() => dispatch(resetCart())} >Empty Cart</span>
 		</div>
 	);
 };
