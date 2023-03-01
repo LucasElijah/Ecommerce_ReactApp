@@ -11,6 +11,17 @@ const { createCoreController } = require("@strapi/strapi").factories;
 module.exports = createCoreController("api::order.order", ({ strapi }) => ({
   async create(ctx) {
     const { email, products } = ctx.request.body;
+
+    const lineItems = await Promise.all(
+      products.map(async (product) => {
+        const item = await strapi
+          .service("api:product.product")
+          .findOne(product.id);
+
+          
+      })
+    );
+
     try {
       const session = (stripe.checkout.create = {
         mode: "payment",
