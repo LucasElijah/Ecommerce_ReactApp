@@ -55,26 +55,6 @@ const Navbar = () => {
 					</Link>
 				</div>
 				<div className="right">
-					<div className="item">
-						<Link className="link" to="/">
-							Homepage
-						</Link>
-					</div>
-					<div className="item">
-						<Link className="link" to="/">
-							About
-						</Link>
-					</div>
-					<div className="item">
-						<Link className="link" to="/">
-							Contact
-						</Link>
-					</div>
-					<div className="item">
-						<Link className="link" to="/">
-							Stores
-						</Link>
-					</div>
 					<div className="icons">
 						<PersonOutlineOutlined />
 						<FavoriteBorderOutlined />
